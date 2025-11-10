@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MalfoufCreape/static/css/main.1e54aa0e.css",
+    "main.js": "/MalfoufCreape/static/js/main.8c664c94.js",
+    "static/js/453.efcb1e49.chunk.js": "/MalfoufCreape/static/js/453.efcb1e49.chunk.js",
+    "index.html": "/MalfoufCreape/index.html",
+    "main.1e54aa0e.css.map": "/MalfoufCreape/static/css/main.1e54aa0e.css.map",
+    "main.8c664c94.js.map": "/MalfoufCreape/static/js/main.8c664c94.js.map",
+    "453.efcb1e49.chunk.js.map": "/MalfoufCreape/static/js/453.efcb1e49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e54aa0e.css",
+    "static/js/main.8c664c94.js"
+  ]
+}
