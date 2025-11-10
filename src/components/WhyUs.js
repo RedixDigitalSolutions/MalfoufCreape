@@ -5,9 +5,18 @@ import styles from '../styles/WhyUs.module.css';
 
 const WhyUs = () => {
     const videos = [
-        { name: 'Kapari Square', file: 'Kapari Square.mp4' },
-        { name: 'Pementos - Présentation 1', file: 'PementosPresentation.mov' },
-        { name: 'Pementos - Présentation 2', file: 'Pementospresentation2.mp4' }
+        {
+            name: 'Kapari Square',
+            file: `${process.env.PUBLIC_URL}/assets/videos/Kapari Square.mp4`
+        },
+        {
+            name: 'Pementos - Présentation 1',
+            file: `${process.env.PUBLIC_URL}/assets/videos/PementosPresentation.mov`
+        },
+        {
+            name: 'Pementos - Présentation 2',
+            file: `${process.env.PUBLIC_URL}/assets/videos/Pementospresentation2.mp4`
+        }
     ];
 
     return (
@@ -38,7 +47,7 @@ const WhyUs = () => {
                             controls
                             className={styles.video}
                         >
-                            <source src={`/assets/videos/${video.file}`} type="video/mp4" />
+                            <source src={video.file} type="video/mp4" />
                             Votre navigateur ne supporte pas la vidéo.
                         </video>
                         <h3>{video.name}</h3>

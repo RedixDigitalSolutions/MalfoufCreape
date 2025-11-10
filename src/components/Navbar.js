@@ -22,8 +22,8 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 <div className={styles.logo} onClick={() => scrollToSection('home')}>
-                    <img src="/assets/redix.png" alt="Redix" />
-                    <span></span>
+                    <img src={`${process.env.PUBLIC_URL}/assets/redix.png`} alt="Redix Digital Solutions" />
+                    <span>REDIX</span>
                 </div>
 
                 <button
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <li onClick={() => scrollToSection('whyus')}>Pourquoi Nous</li>
                     <li onClick={() => scrollToSection('market')}>Analyse du Marché</li>
                     <li onClick={() => scrollToSection('strategy')}>Stratégie</li>
-                    <li onClick={() => scrollToSection('packages')}>pachages</li>
+                    <li onClick={() => scrollToSection('packages')}>Forfaits</li>
                     <li onClick={() => scrollToSection('contact')}>Contact</li>
                 </ul>
             </div>

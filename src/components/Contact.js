@@ -15,7 +15,11 @@ const Contact = () => {
                     className={styles.branding}
                 >
                     <div className={styles.logo}>
-                        <img src="/assets/redix.png" alt="Redix"/>
+                        <img src={`${process.env.PUBLIC_URL}/assets/redix.png`} alt="Redix Digital Solutions" />
+                        <div>
+                            <h3>Redix</h3>
+                            <p className={styles.subtitle}>Digital Solutions</p>
+                        </div>
                     </div>
                     <p className={styles.tagline}>Votre Croissance, Notre Stratégie</p>
                     <p className={styles.description}>
@@ -65,10 +69,10 @@ const Contact = () => {
                         <li>Branding & Design</li>
                         <li>Création de Contenu</li>
                         <li>Développement Web & Mobile</li>
-
-
+                        <li>Publicité Digitale</li>
+                        <li>Optimisation SEO</li>
                         <li>Couverture d'Événements</li>
-
+                        <li>Production Vidéo</li>
                     </ul>
                 </motion.div>
 
@@ -94,7 +98,7 @@ const Contact = () => {
                             Stratégie
                         </li>
                         <li onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}>
-                            Packages
+                            Forfaits
                         </li>
                         <li>
                             <a href="https://redixsolutions.pro" target="_blank" rel="noopener noreferrer">
@@ -106,7 +110,7 @@ const Contact = () => {
             </div>
 
             <div className={styles.bottom}>
-                <p>© 2025 Redix Digital Solutions . Tous droits réservés.</p>
+                <p>© 2025 Redix Digital Solutions. Tous droits réservés.</p>
                 <p className={styles.prepared}>Préparé pour <strong>Malfouf & Crepe</strong> par <strong>Nizar</strong></p>
             </div>
         </footer>
