@@ -1,0 +1,129 @@
+.whyUs {
+    background: #f8f9fa;
+    max-width: 1400px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.videoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.videoCard {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.videoCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.reelBadge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+.video {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+    background: #000;
+}
+
+.videoCard h3 {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.feature {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.15);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6b35;
+}
+
+.feature h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .header h2 {
+        font-size: 32px;
+    }
+
+    .videoGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .video {
+        height: 500px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+}

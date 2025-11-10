@@ -1,0 +1,170 @@
+.market {
+    background: white;
+    max-width: 1400px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.chartsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.chartCard {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.chartCard h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.chartWrapper {
+    height: 300px;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.insightCard {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    padding: 35px;
+    border-radius: 16px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+}
+
+.insightCard h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.insightCard ul {
+    list-style: none;
+}
+
+.insightCard li {
+    padding: 10px 0 10px 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.insightCard li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.swot {
+    background: #f8f9fa;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.swot h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 40px;
+}
+
+.swotGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.swotItem {
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+}
+
+.swotItem h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.swotItem ul {
+    list-style: none;
+}
+
+.swotItem li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.swotItem li::before {
+    content: '•';
+    position: absolute;
+    left: 8px;
+    font-size: 20px;
+}
+
+.strengths {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.weaknesses {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.opportunities {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+.threats {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+@media (max-width: 768px) {
+    .chartsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .chartWrapper {
+        height: 250px;
+    }
+
+    .swot {
+        padding: 30px 20px;
+    }
+
+    .swotGrid {
+        grid-template-columns: 1fr;
+    }
+}

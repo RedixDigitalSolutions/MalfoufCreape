@@ -1,0 +1,129 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    align-items: center;
+}
+
+.navLinks li {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0;
+}
+
+.navLinks li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ff6b35, #f7931e);
+    transition: width 0.3s ease;
+}
+
+.navLinks li:hover {
+    color: #ff6b35;
+}
+
+.navLinks li:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    width: 28px;
+    height: 3px;
+    background: #ff6b35;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 968px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 75px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 280px;
+        height: calc(100vh - 75px);
+        padding: 40px 20px;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+        transition: right 0.4s ease;
+        gap: 25px;
+        align-items: flex-start;
+    }
+
+    .navLinks.open {
+        right: 0;
+    }
+
+    .navLinks li {
+        font-size: 18px;
+        width: 100%;
+        padding: 12px 20px;
+        border-radius: 8px;
+    }
+
+    .navLinks li:hover {
+        background: rgba(255, 107, 53, 0.1);
+    }
+}
