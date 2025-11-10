@@ -1,0 +1,150 @@
+.contact {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    padding: 80px 20px 30px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.branding {
+    max-width: 350px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    filter: drop-shadow(0 5px 15px rgba(255, 107, 53, 0.5));
+}
+
+.logo h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff6b35;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.tagline {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f7931e;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.info h4,
+.services h4,
+.links h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ff6b35;
+}
+
+.info ul,
+.services ul,
+.links ul {
+    list-style: none;
+}
+
+.info li,
+.services li,
+.links li {
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contactIcon {
+    color: #ff6b35;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.links li {
+    cursor: pointer;
+}
+
+.links li:hover,
+.links a:hover {
+    color: #ff6b35;
+    padding-left: 5px;
+}
+
+.links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.bottom {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.prepared {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.prepared strong {
+    color: #ff6b35;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .branding {
+        max-width: 100%;
+    }
+}

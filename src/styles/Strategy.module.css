@@ -1,0 +1,272 @@
+.strategy {
+    background: #f8f9fa;
+    max-width: 1400px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #666;
+}
+
+.competitive {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.competitiveHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.locationIcon {
+    font-size: 32px;
+    color: #ff6b35;
+}
+
+.competitive h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+.competitiveDesc {
+    font-size: 17px;
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.competitorsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+.competitorCard {
+    background: #f8f9fa;
+    padding: 25px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid #e5e7eb;
+}
+
+.competitorCard:hover {
+    transform: translateY(-5px);
+    border-color: #ff6b35;
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.1);
+}
+
+.competitorIcon {
+    font-size: 32px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.competitorCard h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+}
+
+.competitorCard p {
+    font-size: 13px;
+    color: #666;
+}
+
+.advantage {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+}
+
+.advantage p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.advantage strong {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.platforms {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.platformCard {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.platformCard:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.platformIcon {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.platformCard h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.platformCard p {
+    color: #666;
+    font-size: 15px;
+}
+
+.metaAds {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    padding: 60px 50px;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.metaAds h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.adsFeatures {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 35px;
+}
+
+.adsFeature {
+    text-align: center;
+}
+
+.featureIcon {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.adsFeature h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.adsFeature p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.timeline {
+    background: white;
+    padding: 60px 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.timeline h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 50px;
+}
+
+.timelineItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.timelineItem {
+    text-align: center;
+    position: relative;
+}
+
+.timelineMarker {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.3);
+}
+
+.timelineItem h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 12px;
+}
+
+.timelineItem p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .competitive {
+        padding: 30px 25px;
+    }
+
+    .competitorsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .metaAds,
+    .timeline {
+        padding: 40px 25px;
+    }
+
+    .timelineItems {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .competitorsGrid {
+        grid-template-columns: 1fr;
+    }
+}
