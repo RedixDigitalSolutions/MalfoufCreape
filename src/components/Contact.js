@@ -15,7 +15,7 @@ const Contact = () => {
                     className={styles.branding}
                 >
                     <div className={styles.logo}>
-                        <img src={`${process.env.PUBLIC_URL}/assets/redix.png`} alt="Redix Digital Solutions" />
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/redix.png`} alt="Redix Digital Solutions" />
                         <div>
                             <h3>Redix</h3>
                             <p className={styles.subtitle}>Digital Solutions</p>

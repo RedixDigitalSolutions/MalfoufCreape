@@ -79,7 +79,7 @@ const AboutRedix = () => {
                         </p>
                     </div>
                     <div className={styles.introImage}>
-                        <img src="/assets/redix.png" alt="Redix Digital Solutions" />
+                        <img src={`${process.env.PUBLIC_URL}/assets/images/redix.png`} alt="Redix Digital Solutions" />
                     </div>
                 </motion.div>
 

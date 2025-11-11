@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
             <div className={styles.container}>
                 <div className={styles.logo} onClick={() => scrollToSection('home')}>
-                    <img src={`${process.env.PUBLIC_URL}/assets/redix.png`} alt="Redix Digital Solutions" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/redix.png`} alt="Redix Digital Solutions" />
                     <span>REDIX</span>
                 </div>
 

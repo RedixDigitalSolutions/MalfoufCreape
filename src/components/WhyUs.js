@@ -7,7 +7,7 @@ const WhyUs = () => {
     const videos = [
         {
             name: 'Kapari Square',
-            file: `${process.env.PUBLIC_URL}/assets/videos/Kapari Square.mp4`
+            file: `${process.env.PUBLIC_URL}/assets/videos/KapariSquare.mp4`
         },
         {
             name: 'Pementos - Présentation 1',
