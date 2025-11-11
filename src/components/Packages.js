@@ -13,7 +13,7 @@ const Packages = () => {
             features: [
                 'Gestionnaire de publicités professionnel',
                 '1 session de tournage vidéo',
-                '8 vidéos avec montage professionelle',
+                '4 vidéos avec montage professionelle',
                 'Création de feuille de route de contenu',
                 'Sponsoring Meta Ads 20$',
                 'Scripting + idées de vidéos (guidance Redix)',
