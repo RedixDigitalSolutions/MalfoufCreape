@@ -15,7 +15,7 @@ const Packages = () => {
                 '1 session de tournage vidéo',
                 '8 vidéos avec montage professionelle',
                 'Création de feuille de route de contenu',
-                'Sponsoring Meta Ads 40$',
+                'Sponsoring Meta Ads 20$',
                 'Scripting + idées de vidéos (guidance Redix)',
                 'Développement de stratégie marketing',
                 'Analyse des horaires de publication optimaux',
