@@ -6,55 +6,45 @@ import styles from '../styles/Packages.module.css';
 const Packages = () => {
     const packages = [
         {
-            name: 'Pack Basique',
-            subtitle: 'Avec Publicités',
-            price: '400',
+            name: 'Pack Impulsion',
+            subtitle: 'Pour Démarrer',
+            price: '460',
             popular: false,
             features: [
-                'Gestionnaire de publicités professionnel',
-                '1 session de tournage vidéo',
-                '4 vidéos avec montage professionelle',
-                'Création de feuille de route de contenu',
-                'Sponsoring Meta Ads 20$',
-                'Scripting + idées de vidéos (guidance Redix)',
-                'Développement de stratégie marketing',
-                'Analyse des horaires de publication optimaux',
+                '1 séance shooting professionnelle',
+                '4 vidéos avec montage optimisé',
+                '4 posts avec descriptions',
+                'Gestion de 3 comptes (Instagram, Facebook, TikTok)',
+                'Sponsoring des 4 vidéos',
+                'Ads budget: 20$',
             ]
         },
         {
-            name: 'Pack Professionnel',
+            name: 'Pack Impact',
             subtitle: 'Le Plus Populaire',
-            price: '600',
+            price: '870',
             popular: true,
             features: [
-                'Gestionnaire de publicités professionnel',
-                '1 session de tournage vidéo',
-                '8 vidéos avec montage professionelle',
-                'Création de feuille de route de contenu',
-                'Sponsoring Meta Ads 40$',
-                'Scripting + idées de vidéos (guidance Redix)',
-                'Développement de stratégie marketing',
-                'Analyse des horaires de publication optimaux',
-                'Surveillance et reporting des réseaux sociaux'
+                '1 séance shooting professionnelle',
+                '8 vidéos avec montage optimisé',
+                '4 posts avec descriptions',
+                'Gestion de 3 comptes (Instagram, Facebook, TikTok)',
+                'Sponsoring des 8 vidéos',
+                'Ads budget: 40$',
             ]
         },
         {
-            name: 'Pack Ultimate',
+            name: 'Pack Elite',
             subtitle: 'Solution Complète',
-            price: '800',
+            price: '1690',
             popular: false,
             features: [
-                'Gestionnaire de publicités professionnel',
-                '1 session de tournage vidéo',
-                '12 vidéos avec montage professionelle',
-                'Création de feuille de route de contenu',
-                'Sponsoring Meta Ads 60$',
-                'Scripting + idées de vidéos (guidance Redix)',
-                'Téléchargement de contenu et gestion des réseaux sociaux',
-                'Vous répondez uniquement aux messages et commentaires',
-                'Développement de stratégie marketing',
-                'Analyse des horaires de publication optimaux',
-                'Surveillance et reporting des réseaux sociaux'
+                '2 séances shooting professionnelles',
+                '16 vidéos avec montage optimisé',
+                '8 posts avec descriptions',
+                'Gestion de 3 comptes (Instagram, Facebook, TikTok)',
+                'Sponsoring des 16 vidéos',
+                'Ads budget: 60$',
             ]
         }
     ];
@@ -127,16 +117,28 @@ const Packages = () => {
                         <span className={styles.comparisonLabel}>Vidéos par mois</span>
                         <span>4 vidéos</span>
                         <span className={styles.highlighted}>8 vidéos</span>
-                        <span>12 vidéos</span>
+                        <span>16 vidéos</span>
+                    </div>
+                    <div className={styles.comparisonRow}>
+                        <span className={styles.comparisonLabel}>Séances shooting</span>
+                        <span>1 séance</span>
+                        <span className={styles.highlighted}>1 séance</span>
+                        <span>2 séances</span>
+                    </div>
+                    <div className={styles.comparisonRow}>
+                        <span className={styles.comparisonLabel}>Posts</span>
+                        <span>4 posts</span>
+                        <span className={styles.highlighted}>4 posts</span>
+                        <span>8 posts</span>
                     </div>
                     <div className={styles.comparisonRow}>
                         <span className={styles.comparisonLabel}>Budget publicitaire</span>
-                        <span>20$ Meta Ads</span>
-                        <span className={styles.highlighted}>40$ Meta Ads</span>
-                        <span>60$ Meta Ads</span>
+                        <span>20$</span>
+                        <span className={styles.highlighted}>40$</span>
+                        <span>60$</span>
                     </div>
                     <div className={styles.comparisonRow}>
-                        <span className={styles.comparisonLabel}>Gestion complète</span>
+                        <span className={styles.comparisonLabel}>Gestion 3 comptes</span>
                         <span>✓</span>
                         <span className={styles.highlighted}>✓</span>
                         <span>✓</span>
